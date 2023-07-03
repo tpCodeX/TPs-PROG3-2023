@@ -1,0 +1,11 @@
+.autoContainer{
+    width: 400px;
+    height: 200px;
+    border: solid 2px white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2em;
+}

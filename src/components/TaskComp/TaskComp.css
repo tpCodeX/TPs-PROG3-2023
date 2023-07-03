@@ -1,0 +1,52 @@
+.taskBody {
+  display: flex;
+  font-family: "Assistant", sans-serif;
+  color: white;
+  background-color: rgba(98, 96, 94, 0.163);
+  border: solid 1px grey;
+  height: fit-content;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 25px;
+}
+.taskBody * {
+  margin: 0;
+  padding: 0;
+}
+.taskTitle {
+  overflow: hidden;
+  overflow-wrap: break-word;
+  inline-size: auto; 
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-left: 1em;
+  width: 20%;
+  height: fit-content;
+}
+.taskCheck {
+  margin: 0;
+  margin-right: .65em;
+  padding: 0;
+  height: 100%;
+  width: 10%;
+}
+.taskCheck > input {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.taskDescription{
+  width: 60%;
+  font-weight: 200;
+  color: gray;
+  font-style: italic;
+}
+.taskDate{
+    width: 10%;
+}
+.Completed {
+  color: rgb(73, 72, 72) !important;
+  text-decoration: line-through 2px;
+}

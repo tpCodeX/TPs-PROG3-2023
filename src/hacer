@@ -1,0 +1,14 @@
+Switch Button para cambiar el tema. 
+
+Cuerpo de la tarea: 
+1checkbox isCompleted
+
+
+Panel de creacion de tarea: 
+1 dropdown para abrir el panel.
+2 imput date (fecha de creacion)
+Input Slider para seelccionar rango de tiempo de la tarea. 
+Input Text para seleccionar el texto.
+Input Text Area para seleccionar descripcion.
+Radio Button para seleccionar importancia
+
