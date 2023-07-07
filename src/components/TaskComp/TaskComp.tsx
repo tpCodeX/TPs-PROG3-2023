@@ -2,20 +2,16 @@ import './TaskComp.css'
 import { CheckBox } from '../../widgets/widgetsClase/CheckBox';
 import { useState } from 'react';
 
-
-
-
-
-const TaskComp=({title,description,date}:iTask) => {
+const TaskComp=({title,description,date,id}:iTask) => {
 
     const[isCompleted,setIsCompleted] = useState(false);
 
-    
     const handleChecked=() => {
         setIsCompleted(!isCompleted);
     };
-    
+
     const completedStyle= isCompleted ? "Completed":"";
+    const checkedStyle= isCompleted ? "checkeado":"";
     return (
         <>
             <div className={"taskTitle"+" " + completedStyle}>
@@ -27,8 +23,8 @@ const TaskComp=({title,description,date}:iTask) => {
             <div className={"taskDate"+ " " +completedStyle}>
                 {date ? <p>{date}</p> : <p>Sin fecha.</p>}
             </div>
-            <div className="taskCheck">
-                <CheckBox id='taskCheckBox' setIsChecked={handleChecked}/>
+            <div className={"taskCheck"+ " " +checkedStyle}>
+                <CheckBox id={id} label={isCompleted? "Completado":"Completar"} setIsChecked={handleChecked}/>
             </div>
         </>
     )

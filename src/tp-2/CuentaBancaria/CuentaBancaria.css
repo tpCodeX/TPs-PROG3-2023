@@ -1,0 +1,52 @@
+.cuenta-container{
+    font-family: monospace;
+    color: rgb(205, 174, 75);
+    border: solid 5px rgba(76, 52, 9, 0.671);
+    width: 400px;
+    border-radius:38px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    padding: 2em;
+}
+
+.cuenta-info{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.formularios{
+    position: relative;
+    left: -10px;
+    display: flex;
+    width: 100%;
+}
+
+input,button{
+    color: rgb(205, 174, 75);
+    background-color: transparent;
+    margin: 3px;
+    border: solid .1px rgb(205, 174, 75);
+    border-radius: 10px;
+    padding: 5px;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 2px white;
+}
+button:hover{
+    outline: none;
+    box-shadow: 0 0 2px white;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  margin: 0;
+}
+
+
+

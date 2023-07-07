@@ -26,16 +26,33 @@
   height: fit-content;
 }
 .taskCheck {
+  position: relative;
   margin: 0;
   margin-right: .65em;
   padding: 0;
   height: 100%;
   width: 10%;
+  cursor: pointer;
+  background-color:rgba(0, 255, 119, 0.189) ;
+  padding: 5px 0 5px 0;
 }
-.taskCheck > input {
+
+.checkeado{
+  background-color: rgba(119, 0, 255, 0.189);
+}
+
+.taskCheck > input[type="checkbox"] {
+  display: none;
   height: 100%;
   width: 100%;
+}
+.taskCheck>label{
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 .taskDescription{
   width: 60%;

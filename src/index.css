@@ -10,6 +10,14 @@ body{
   align-items: center;
   justify-content: center;
 }
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tp2{
+  margin: 2em;
+}
 
 
 
